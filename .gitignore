@@ -1,0 +1,10 @@
+.pytest_cache
+.venv
+.vscode
+build
+.DS_Store
+__pycache__
+
+.qtcreator
+
+.local-backups
