@@ -7,9 +7,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_subdirectory(thirdparty/pybind11)
 include_directories(thirdparty/eigen)
-include_directories(
-  /opt/homebrew/Frameworks/Python.framework/Headers
-)
 
 # # Include the FetchContent module
 # include(FetchContent)
