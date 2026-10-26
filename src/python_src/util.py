@@ -13,6 +13,7 @@ def skewSymmetric(v):
            + 2*q.scalar*skewSymmetric(q.vector)"""
            
 def quatToMatrix(q): # body to inertial
+    q = q.reshape((4,))
     q = Quaternion(q)
     return 2.0*np.outer(q, q.vector) \
             + np.identity(3)*(q.scalar**2 - q.vector.dot(q.vector)) \
